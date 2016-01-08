@@ -66,6 +66,7 @@ Bind a container to a specific port
 ```
 docker run -d -p 4444:4444 centos /bin/nc -l 4444
 ```
+Use `-P` to auto-map network ports in the image with the docker host
 
 Save the container that has been modified
 ```
@@ -75,4 +76,6 @@ docker commit centos user/centos-modified
 List all downloaded Docker images
 ```
 docker images
+
+docker images centos # Shows all tags downloaded
 ```
